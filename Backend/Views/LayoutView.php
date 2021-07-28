@@ -11,8 +11,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../Assets/Backend/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Assets/Backend/css/AdminLTE.min.css">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
-         folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="../Assets/Backend/css/_all-skins.min.css">
     <!-- Google Font -->
     <link rel="stylesheet"
