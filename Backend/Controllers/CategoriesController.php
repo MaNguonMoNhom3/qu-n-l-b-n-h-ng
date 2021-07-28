@@ -2,22 +2,15 @@
 	include "Models/CategoriesModel.php";
 	class CategoriesController extends CategoriesModel{
 		public function read(){
-			//quy dinh so ban ghi tren mot trang
 			$recordPerPage = 15;
-			//tinh so trang
 			$numPage = ceil($this->modelTotal()/$recordPerPage);
-			//goi ham de lay du lieu
 			$listRecord = $this->modelRead($recordPerPage);
-			//load view
 			include "Views/CategoriesView.php";
 		}
-		//edit ban ghi
 		public function update(){
 			$id = isset($_GET["id"]) ? $_GET["id"] : 0;
-			//goi ham de lay du lieu truyen ra view
 			$record = $this->modelGetRecord($id);
 			$action = "index.php?controller=categories&action=updatePost&id=$id";
-			//goi view
 			include "Views/CategoriesCreateUpdateView.php";
 		}
 		//edit khi an nut submit
