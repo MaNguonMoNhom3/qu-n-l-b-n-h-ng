@@ -1,4 +1,4 @@
-<!-- <?php 
+<?php 
 	//start session
 	session_start();
 	//load file Connection.php
@@ -21,4 +21,4 @@
 		//load file Layout.php
 		include "Views/LayoutView.php";
 	}
- ?> -->
+ ?>
