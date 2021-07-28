@@ -5,7 +5,7 @@
 		//tu khoa static dat o day de co the dung: tenclass::tenham()
 		public static function getInstance(){
 			//thuc hien ket noi csdl
-			$conn = new PDO("mysql:hostname=localhost;dbname=main_project","root","");
+			$conn = new PDO("mysql:hostname=localhost;dbname=main_project","root","admin");
 			//lay du lieu theo kieu unicode (de hien thi tieng viet)
 			$conn->exec("set names utf8");
 			//set cach duyet ket qua tra ve
