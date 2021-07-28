@@ -26,31 +26,7 @@
 			//load view
 			include "Views/ProductDetailView.php";
         }
-        public function searchPrice(){
-			$fromPrice = isset($_GET["fromPrice"]) ? $_GET["fromPrice"] : 0;
-			$toPrice = isset($_GET["toPrice"]) ? $_GET["toPrice"] : 0;
-			//--
-			
-			//--
-			//quy dinh so ban ghi tren mot trang
-			$recordPerPage = 12;
-			//tinh so trang
-			$numPage = ceil($this->modelTotalSearchPrice($fromPrice,$toPrice)/$recordPerPage);
-			//goi ham de lay du lieu
-			$listRecord = $this->modelReadSearchPrice($fromPrice,$toPrice,$recordPerPage);
-			//load view
-			include "Views/ProductsSearchView.php";
-			//--
-		}
-		// rating
-		public function rating(){
-			$id = isset($_GET["id"]) ? $_GET["id"] : 0;
-			$star = isset($_GET["star"]) ? $_GET["star"] : 0;
-			//insert ban ghi vao table rating
-			$conn = Connection::getInstance();
-			$conn->query("insert into rating(product_id,star) values($id,$star)");
-			//den trang chi tiet
-			echo "<script>location.href='index.php?controller=products&action=detail&id=$id';</script>";
-		}
+    
+		
     }
 ?>

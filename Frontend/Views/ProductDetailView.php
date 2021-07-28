@@ -42,11 +42,7 @@
                                 
                             }
                         </script>
-                        <tr>
-                            <td>
-                                <input id="bn" type="button" value="Buy Now">
-                            </td>
-                        </tr>
+                        
                     </table>
                 </div>
                 

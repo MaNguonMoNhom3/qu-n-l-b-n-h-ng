@@ -87,59 +87,5 @@
 			return $result->name;
 			//---
         }
-        public function modelReadSearchPrice($fromPrice,$toPrice,$recordPerPage){
-			//lay tong to so ban ghi
-			$total = $this->modelTotalSearchPrice($fromPrice,$toPrice);
-			//tinh so trang
-			$numPage = ceil($total/$recordPerPage);
-			//lay so trang hien tai truyen tu url
-			$page = isset($_GET["p"]) && $_GET["p"] > 0 ? $_GET["p"]-1 : 0;
-			//lay tu ban ghi nao
-			$from = $page * $recordPerPage;
-			//thuc hien truy van
-			$conn = Connection::getInstance();
-			$query = $conn->query("select * from products where price >= $fromPrice and price <= $toPrice limit $from, $recordPerPage");
-			//tra ve tat ca cac ban truy van duoc
-			return $query->fetchAll();
-		}
-		//ham tinh tong so ban ghi
-		public function modelTotalSearchPrice($fromPrice,$toPrice){
-			//---
-			$conn = Connection::getInstance();
-			$query = $conn->query("select id from products where price >= $fromPrice and price <= $toPrice order by id desc");
-			//lay tong so ban ghi
-			return $query->rowCount();
-			//---
-		}
-		//rating star-------------------
-		public function star1($product_id){
-			$conn = Connection::getInstance();
-			$query = $conn->query("select id from rating where product_id=$product_id and star=1");
-			return $query->rowCount();
-		}
-		//so vote 2 star
-		public function star2($product_id){
-			$conn = Connection::getInstance();
-			$query = $conn->query("select id from rating where product_id=$product_id and star=2");
-			return $query->rowCount();
-		}
-		//so vote 3 star
-		public function star3($product_id){
-			$conn = Connection::getInstance();
-			$query = $conn->query("select id from rating where product_id=$product_id and star=3");
-			return $query->rowCount();
-		}
-		//so vote 4 star
-		public function star4($product_id){
-			$conn = Connection::getInstance();
-			$query = $conn->query("select id from rating where product_id=$product_id and star=4");
-			return $query->rowCount();
-		}
-		//so vote 5 star
-		public function star5($product_id){
-			$conn = Connection::getInstance();
-			$query = $conn->query("select id from rating where product_id=$product_id and star=5");
-			return $query->rowCount();
-		}
     }
 ?>
