@@ -36,7 +36,6 @@
                 </div>
             </div>
             <!-- end rows -->
-            
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Price</div>
@@ -54,7 +53,7 @@
                 </div>
             </div>
             <!-- end rows -->
-
+            
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Description</div>
@@ -66,7 +65,7 @@
                 </div>
             </div>
             <!-- end rows -->
-
+            
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Content</div>
