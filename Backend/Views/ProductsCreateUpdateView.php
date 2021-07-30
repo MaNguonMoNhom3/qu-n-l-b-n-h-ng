@@ -2,7 +2,7 @@
     <div class="panel panel-primary">
         <div class="panel-heading">Add edit user</div>
         <div class="panel-body">
-            <!-- de upload anh phai co thuoc tinh enctype="multipart/form-data" -->
+            <!-- muon upload duoc anh thi phai co thuoc tinh enctype="multipart/form-data" -->
         <form method="post" enctype="multipart/form-data" action="<?php echo $action; ?>">
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
@@ -12,7 +12,6 @@
                 </div>
             </div>
             <!-- end rows -->
-
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Category</div>
@@ -44,7 +43,6 @@
                 </div>
             </div>
             <!-- end rows -->
-
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Discount (%)</div>
@@ -53,7 +51,6 @@
                 </div>
             </div>
             <!-- end rows -->
-            
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Description</div>
@@ -65,7 +62,6 @@
                 </div>
             </div>
             <!-- end rows -->
-            
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Content</div>
@@ -77,7 +73,6 @@
                 </div>
             </div>
             <!-- end rows -->
-
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2"></div>
@@ -86,7 +81,6 @@
                 </div>
             </div>
             <!-- end rows -->
-
             <!-- rows -->
             <div class="row" style="margin-top:5px;">
                 <div class="col-md-2">Photo</div>
