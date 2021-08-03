@@ -26,5 +26,3 @@
 			unset($_SESSION["customerName"]);
 			echo "<script>location.href='index.php?controller=account&action=login';</script>";
 		}
-    }
-?>
