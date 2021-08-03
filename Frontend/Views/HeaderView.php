@@ -7,8 +7,7 @@
                     <div class="col-xl-8 header-right">
                         <nav class="menu" style="z-index: 999;">
                             <ul>
-                                <li><a href="index.php">Trang chủ</a></li>
-                                <!-- <li><a href="index.php?controller=products&action=showall">Sản phẩm</a></li> -->
+                                <li><a href="index.php?controller=products&action=showall">Trang chủ</a></li>
                             </ul>
                         </nav>
                         <div class="login-and-cart">
@@ -22,7 +21,6 @@
                                     <li style="position:absolute;"><a href="index.php?controller=cart&action=read" style="font-size:25px;"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></li>
                                 <?php endif;?>
                                 <div class="change-inf" id="onff">
-                                    <a href="index.php?controller=account&action=read&id=<?php echo $_SESSION["customerId"]; ?>">Xem đơn hàng</a>
                                     <a href="index.php?controller=account&action=logout">Đăng xuất</a>
                                 </div>
                             </ul>
