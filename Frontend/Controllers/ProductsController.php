@@ -10,14 +10,16 @@
 			//goi ham de lay du lieu
 			$listRecord = $this->modelRead($category_id,$recordPerPage);
 			//load view
-			include "Views/ProductsCategoriesView.php";
+
+			include "Views/TrangChu.php";
+
         }
         public function showall()
         {
             $recordPerPage = 12;
             $numPage = ceil($this->modelGetAll()/$recordPerPage);
             $listRecord = $this->modelReadAll($recordPerPage);
-            include "Views/ProductsCategoriesView.php";
+            include "Views/TrangChu.php";
         }
         public function detail(){
 			$id = isset($_GET["id"]) ? $_GET["id"] : 0;

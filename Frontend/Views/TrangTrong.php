@@ -48,5 +48,4 @@
 
     <!-- /wrapper -->
 </body>
-<div id = "fb-root" > </ div> <script async Hoãn crossorigin = "nặc danh" src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0&appId= 3308884869229660 & autoLogAppEvents = 1 " nonce = " qRsWwUyp " > </script>
 </html>

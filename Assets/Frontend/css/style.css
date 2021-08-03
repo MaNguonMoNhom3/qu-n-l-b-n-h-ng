@@ -748,7 +748,7 @@ padding-bottom: 5px;
     margin-bottom: 30px;
 }
 .item__prod{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     position: relative;
 }
 .search-box{
@@ -802,7 +802,6 @@ padding-bottom: 5px;
     width: 300px;
 }
 .linex{
-    border: 1px solid black;
     z-index: -1;
     margin-bottom: 50px;
     border-top-width: 0;
