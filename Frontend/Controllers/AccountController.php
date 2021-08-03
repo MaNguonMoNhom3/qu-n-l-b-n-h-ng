@@ -26,22 +26,5 @@
 			unset($_SESSION["customerName"]);
 			echo "<script>location.href='index.php?controller=account&action=login';</script>";
 		}
-		public function change()
-		{
-			$id = isset($_GET["id"]) ? $_GET["id"]:0;
-			$action = "index.php?controller=account&action=updatePost&id=$id";
-			include "Views/CustomersView.php";
-		}
-		public function read(){
-			//quy dinh so ban ghi tren mot trang
-			$recordPerPage = 20;
-			$id = isset($_GET["id"]) ? $_GET["id"]:0;
-			//tinh so trang
-			$numPage = ceil($this->modelTotal($id)/$recordPerPage);
-			//goi ham de lay du lieu
-			$listRecord = $this->modelRead($recordPerPage,$id);
-			//load view
-			include "Views/HistoryView.php";
-		}
     }
 ?>

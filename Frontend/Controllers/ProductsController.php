@@ -10,7 +10,9 @@
 			//goi ham de lay du lieu
 			$listRecord = $this->modelRead($category_id,$recordPerPage);
 			//load view
+
 			include "Views/TrangChu.php";
+
         }
         public function showall()
         {

@@ -1,3 +1,4 @@
+
         <!-- header -->
         <header>
             <div class="container-fluid">
@@ -53,17 +54,47 @@
                                 })
                             </script>
                         </div>
-                    </div>
-                    <!-- /right -->
+                    </ul>
+                    <style>
+                        .change-inf{
+                            display: none;
+                            position: absolute;
+                            background-color: #f1f1f1;
+                            top: 60px;
+                            bottom:50;
+                            width: 150px;
+                            z-index: 999;
+                        }
+                        .change-inf a{
+                            display: block;
+                            line-height: 30px;
+                            text-align:center;
+                        }
+                    </style>
+                    <script>
+                        $(document).ready(function(){
+                            $("#displayy").mouseenter(function(){
+                                $("#onff").fadeIn(500);
+                            })
+                            $("#onff").mouseleave(
+                                function(){
+                                    $(this).fadeOut();
+                                }
+                            )
+                        })
+                    </script>
                 </div>
             </div>
-        </header>
-        <!-- /header -->
-        <div class="addTc" style="display:none;">
-            Đã thêm vào giỏ hàng !
+            <!-- /right -->
         </div>
-        <script>
-            function addTC(){
-                document.getElementsByClassName("addTC").setAttribute("style","display:block;")
-            }
-        </script>
+    </div>
+</header>
+<!-- /header -->
+<div class="addTc" style="display:none;">
+    Đã thêm vào giỏ hàng !
+</div>
+<script>
+    function addTC(){
+        document.getElementsByClassName("addTC").setAttribute("style","display:block;")
+    }
+</script>

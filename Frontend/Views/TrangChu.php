@@ -3,17 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/jquery-3.5.1.js"></script>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../Assets/Frontend/css//bootstrap.min.css">
-    <script src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Assets/Frontend/css/reset.css">
-    <link rel="stylesheet" href="../Assets/Frontend/css/style.css">
-    <link rel="stylesheet" href="../Assets/Frontend/css/responsive.css">
-    <link rel="shortcut icon" href="./codermenswear.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../Assets/Frontend/css/slide.css">
     <title>Quản lý bán hàng</title>
 </head>
 
